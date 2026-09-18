@@ -1,0 +1,190 @@
+
+
+* {
+  box-sizing: border-box;
+  }
+
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background-color: #f4f4f4;
+}
+
+.sidebar-layout {
+display: flex;
+min-height: 400px;
+}
+
+.sidebar {
+width: 220px;
+background-color: #222;
+padding: 25px;
+}
+
+.sidebar h2 {
+color: white;
+margin-bottom: 30px;
+}
+
+.sidebar a {
+display: block;
+color: white;
+text-decoration: none;
+padding: 12px;
+margin-bottom: 8px;
+}
+
+.sidebar a:hover {
+background-color: #444;
+}
+
+.main-content {
+flex: 1;
+padding: 40px;
+background-color: white;
+}
+
+
+
+.product-section {
+padding: 40px;
+text-align: center;
+}
+
+.product-card {
+width: 300px;
+
+```
+
+margin: 20px auto;
+padding: 20px;
+border: 2px solid #333;
+
+background-color: white;
+border-radius: 10px;
+```
+
+}
+
+.product-image {
+height: 180px;
+background-color: #ddd;
+
+```
+display: flex;
+justify-content: center;
+align-items: center;
+
+margin-bottom: 15px;
+```
+
+}
+
+.product-card h2 {
+margin: 10px 0;
+}
+
+.product-card p {
+line-height: 1.5;
+}
+
+.product-card h3 {
+font-size: 24px;
+}
+
+.product-card button {
+padding: 10px 20px;
+border: none;
+background-color: #222;
+color: white;
+cursor: pointer;
+border-radius: 5px;
+}
+
+.product-card button:hover {
+background-color: #555;
+}
+
+
+
+.blog-section {
+padding: 40px;
+text-align: center;
+}
+
+.blog-container {
+display: flex;
+gap: 20px;
+justify-content: center;
+}
+
+.blog-card {
+flex: 1;
+max-width: 350px;
+
+```
+padding: 25px;
+border: 1px solid #ccc;
+background-color: white;
+border-radius: 8px;
+text-align: left;
+```
+
+}
+
+.blog-card h2 {
+margin-top: 0;
+}
+
+.blog-card p {
+line-height: 1.6;
+}
+
+.blog-card a {
+text-decoration: none;
+font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+
+```
+/* Sidebar becomes horizontal */
+.sidebar-layout {
+    flex-direction: column;
+}
+
+.sidebar {
+    width: 100%;
+    text-align: center;
+}
+
+.sidebar a {
+    display: inline-block;
+    margin: 5px;
+}
+
+.main-content {
+    padding: 25px;
+}
+
+
+/* Product card */
+.product-card {
+    width: 90%;
+}
+
+
+
+.blog-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-card {
+    width: 100%;
+    max-width: 500px;
+}
+```
+
+}
