@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Layouts</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        @media(max-width: 400px){
+            body {
+                background-color:blueviolet;
+            }
+        }
+
+        @media(min-width:481px) and (max-width: 768px){
+            body {
+                background-color:yellow;
+            }
+        }
+
+        @media(min-width:769px){
+            body{
+                background-color:brown;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+<section class="sidebar-layout">
+
+    <aside class="sidebar">
+        <h2>My Website</h2>
+
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Products</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+    </aside>
+
+    <main class="main-content">
+        <h1>Welcome to My Website</h1>
+        <p>
+            This is a responsive sidebar layout.
+            The sidebar contains navigation links.
+        </p>
+    </main>
+
+</section>
+
+
+
+<section class="product-section">
+
+    <h1>Product Card</h1>
+
+    <div class="product-card">
+
+        <div class="product-image">
+               <img src="data:image/jpeg;base64,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" alt="Wireless Headphones">
+        </div>
+
+        <h2>Wireless Headphones</h2>
+
+        <p>
+            High-quality wireless headphones with
+            excellent sound and comfortable design.
+        </p>
+
+        <h3>₹1,999</h3>
+
+        <button>Buy Now</button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= BLOG LAYOUT ================= -->
+
+<section class="blog-section">
+
+    <h1>My Blog</h1>
+
+    <div class="blog-container">
+
+        <article class="blog-card">
+            <h2>HTML Basics</h2>
+            <p>
+                Learn the basic structure of HTML
+                and how webpages are created.
+            </p>
+            <a href="#">Read More</a>
+        </article>
+
+        <article class="blog-card">
+            <h2>CSS Flexbox</h2>
+            <p>
+                Flexbox makes it easier to create
+                flexible and responsive layouts.
+            </p>
+            <a href="#">Read More</a>
+        </article>
+
+        <article class="blog-card">
+            <h2>Responsive Design</h2>
+            <p>
+                Media queries help websites look
+                good on mobile, tablet and desktop.
+            </p>
+            <a href="#">Read More</a>
+        </article>
+
+    </div>
+
+</section>
+```
+
+</body>
+</html>
